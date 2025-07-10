@@ -1,0 +1,61 @@
+// Global Variable ================================================================================ Global Variable
+
+$black1: #121416;
+$black2: #28292b;
+$white1: #f8f9fa;
+$white2: #eeeef2;
+$white3: #e2e2e3;
+$gray1: #cbcccd;
+$gray2: #a4a5ab;
+$blue1: #28292b;
+$blue2: #1e1e1e;
+$blue3: #3c3c3c;
+$font-size-default: 16px;
+$font-size-small: 0.9rem;
+$font1family1: Calibri, Helvetica, sans-serif;
+//@use '../../../styles' as *;
+
+// Global Styles ================================================================================== Global Styles
+
+html, body {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1400px;
+  font-size: $font-size-default;
+  color: $black1;
+  font-family: $font1family1;
+  background-color: $white2;
+  height: 100%;
+  padding: 0;
+}
+
+input, button, select, textarea {
+  font-family: $font1family1;
+  font-size: $font-size-small;
+}
+
+table{
+  overflow: auto; // Добавляет прокрутку, если контент выходит за границы
+  width: 100%;
+  min-width: 100%;
+  font-family: $font1family1;
+  font-size: $font-size-small;
+  background-color: $white2;
+  text-align: left;
+  word-break: break-word;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $gray1; // Тонкая сетка вокруг ячеек
+
+  th, td {
+    line-height: 1rem;
+    height: 1.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border: 1px solid rgba($gray2, 0.5); // Тонкая сетка вокруг ячеек
+
+    white-space: nowrap;  // троеточие
+    overflow: hidden; // троеточие
+    text-overflow: ellipsis; // троеточие
+  }
+}
